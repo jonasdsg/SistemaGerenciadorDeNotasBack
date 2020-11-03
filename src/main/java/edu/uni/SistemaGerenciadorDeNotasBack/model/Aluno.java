@@ -1,4 +1,4 @@
-package model;
+package edu.uni.SistemaGerenciadorDeNotasBack.model;
 
 import java.io.Serializable;
 
