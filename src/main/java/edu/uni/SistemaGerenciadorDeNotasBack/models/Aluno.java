@@ -6,6 +6,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
+import edu.uni.SistemaGerenciadorDeNotasBack.modelsDTO.AlunoDTO;
+
 @Entity
 public class Aluno  {
 	@Id
@@ -50,6 +52,10 @@ public class Aluno  {
 
 	public void setAvaliacao(Avaliacao avaliacao) {
 		this.avaliacao = avaliacao;
+	}
+	
+	public AlunoDTO convert() {
+		return new AlunoDTO(this.nome,this.matricula,this.avaliacao);
 	}
 	
 	
