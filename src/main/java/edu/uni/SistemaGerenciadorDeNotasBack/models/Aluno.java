@@ -26,6 +26,14 @@ public class Aluno  {
 		this.matricula = matricula;
 	}
 
+	public Aluno(String nome, String matricula,Avaliacao avaliacao) {
+		super();
+		this.nome = nome;
+		this.matricula = matricula;
+		this.avaliacao = avaliacao;
+
+	}
+
 	public Integer getId() {
 		return id;
 	}
